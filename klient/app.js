@@ -109,8 +109,8 @@ else{
     ponownie.innerHTML= "Zagraj ponownie"
     div_p.innerHTML =  "Koniec gry, wyczerpałeś swoje życia"
     div_p.classList.add("div_p")
-    document.getElementById("gra").appendChild(div_p)
     div_p.appendChild(ponownie)
+    document.getElementById("gra").appendChild(div_p)
     
 }
 
