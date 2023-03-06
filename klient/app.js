@@ -13,7 +13,7 @@ function losuj_nr() {
 // losuje i wyświetla w konsoli wylosowane kraje
  function losuj_kraje(){
 
-    document.getElementById("gra").innerHTML = ""
+    document.getElementById("prawogra").innerHTML = ""
   
      wybrane = 0
 
@@ -41,7 +41,7 @@ function losuj_nr() {
      div_kraj1.appendChild(nazwa_kraj1)
      div_kraj1.appendChild(flaga_kraj1)
      div_kraj1.appendChild(input)
-     document.getElementById("gra").appendChild(div_kraj1)
+     document.getElementById("prawogra").appendChild(div_kraj1)
 
 }
 var wybrane = 0
@@ -84,7 +84,7 @@ var wszystkie = 0
             else{
 
                 zycia--
-
+                serca() 
                 fodp++
                 fodp1.innerHTML = "Twoje złe odpowiedzi to: " +fodp
 
@@ -104,12 +104,26 @@ var wszystkie = 0
 else{
     document.getElementById("gra").innerHTML = ""
     const div_p = document.createElement("div_p")
+    const ponownie = document.createElement("button")
+    ponownie.setAttribute("onclick", "window.location.reload()")
+    ponownie.innerHTML= "Zagraj ponownie"
     div_p.innerHTML =  "Koniec gry, wyczerpałeś swoje życia"
     div_p.classList.add("div_p")
     document.getElementById("gra").appendChild(div_p)
+    div_p.appendChild(ponownie)
     
 }
 
+}
+
+function serca(){
+    if(zycia==1){
+     document.getElementById("sercah").innerHTML = "💗💗💔"
+    }
+    
+    if(zycia==0){
+        document.getElementById("sercah").innerHTML = "💗💔💔"
+       }
 }
 
 getData()
