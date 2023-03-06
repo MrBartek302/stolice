@@ -118,11 +118,11 @@ else{
 
 function serca(){
     if(zycia==1){
-     document.getElementById("sercah").innerHTML = "💗💗💔"
+     document.getElementById("sercah").innerHTML = "❤️❤️💔"
     }
     
     if(zycia==0){
-        document.getElementById("sercah").innerHTML = "💗💔💔"
+        document.getElementById("sercah").innerHTML = "❤️💔💔"
        }
 }
 
