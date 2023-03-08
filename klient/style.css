@@ -43,7 +43,8 @@ body{
     border: solid white 3px;
     border-radius: 15px;
     align-items: center;
-    justify-content: baseline;
+    justify-content: center;
+    text-align: center;
 }
 
 #sercah{
