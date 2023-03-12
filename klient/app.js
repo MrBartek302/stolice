@@ -102,15 +102,15 @@ var wszystkie = 0
 }
 
 else{
-    document.getElementById("gra").innerHTML = ""
-    const div_p = document.createElement("div_p")
-    const ponownie = document.createElement("button")
-    ponownie.setAttribute("onclick", "window.location.reload()")
-    ponownie.innerHTML= "Zagraj ponownie"
-    div_p.innerHTML =  "Koniec gry, wyczerpałeś swoje życia"
-    div_p.classList.add("div_p")
-    div_p.appendChild(ponownie)
-    document.getElementById("gra").appendChild(div_p)
+     document.getElementById("gra").innerHTML = ""
+     const div_p = document.createElement("div_p")
+     div_p.innerHTML =  "Koniec gry, wyczerpałeś swoje życia"
+     div_p.classList.add("div_p")
+     const ponownie = document.createElement("button")
+     ponownie.setAttribute("onclick", "window.location.reload()")
+     ponownie.innerHTML= "Zagraj ponownie"
+     div_p.appendChild(ponownie)
+     document.getElementById("gra").appendChild(div_p)
     
 }
 
